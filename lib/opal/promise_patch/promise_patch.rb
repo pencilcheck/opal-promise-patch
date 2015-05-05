@@ -7,6 +7,8 @@ else
 
   gem_dir = File.join(Opal.gem_dir, '..')
   require(gem_dir + '/stdlib/promise')
+
+  Opal.append_path File.expand_path('../../..', __FILE__).untaint
 end
 
 class Promise
