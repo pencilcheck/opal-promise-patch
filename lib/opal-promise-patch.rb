@@ -1,1 +1,1 @@
-require 'opals/promise_patch/promise_patch'
+require 'opal/promise_patch/promise_patch'
