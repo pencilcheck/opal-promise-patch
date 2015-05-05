@@ -1,0 +1,21 @@
+* Fixing arguments passed in as Promises
+Example:
+```
+begin
+  a = store._items.fetch_first
+  a._first_name + " " + a._last_name
+rescue => e
+  ..
+end
+```
+
+Example:
+```
+begin
+  a = store._items.fetch_first
+  " " + a._last_name
+rescue => e
+  ..
+end
+```
+* Exceptions are swallowed
