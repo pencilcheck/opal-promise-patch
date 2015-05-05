@@ -18,5 +18,5 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
   s.require_paths = ['lib']
 
-  s.add_dependency 'opal', '~> 0.7.2'
+  s.add_runtime_dependency 'opal', '>= 0.7.2'
 end
