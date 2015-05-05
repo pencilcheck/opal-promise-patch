@@ -1,4 +1,3 @@
-require 'opal'
 if RUBY_PLATFORM == 'opal'
   require 'promise'
 else
@@ -17,5 +16,11 @@ class Promise
     end.fail do |error|
       raise error
     end
+  end
+end
+
+class Object
+  def to_promise
+    Promise.new.resolve(self)
   end
 end

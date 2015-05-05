@@ -1,7 +1,5 @@
-$:.push File.expand_path("../lib", __FILE__)
-
-# Maintain your gem's version:
-require "utils/promise/version"
+# -*- encoding: utf-8 -*-
+require File.expand_path('../lib/opals/promise_patch/version', __FILE__)
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
@@ -18,5 +16,5 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
   s.require_paths = ['lib']
 
-  s.add_runtime_dependency 'opal', '~> 0.7'
+  s.add_runtime_dependency 'opal', '>= 0.7.0', '< 0.9.0'
 end
